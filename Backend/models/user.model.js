@@ -30,6 +30,11 @@ const userSchema = new mongoose.Schema({
         type: String,
         required: true,
         minlength: [5, 'password must be atleast 5 or more characters long'],
-    }
+    },
+
+    //for live tracking,sharing captain location to user
+    socketID: {
+       type: String,
+    },
 
 })
